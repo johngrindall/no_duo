@@ -17,7 +17,7 @@ function generate_key(){
 	});
 
 	//Retrieve the value of secret from localStorage, set it if it doesn't exist (will be changed later)
-	chrome.storage.sync.set({'secret': 'GNSWEZLEMQ4GEMTFMIYDGMTCGUZTMNTDGQZDINLCMYZDCY3GHA2Q'}, function() {
+	chrome.storage.sync.set({'secret': ''}, function() {
 	    console.log('Settings saved for secret');
 	});
 	
