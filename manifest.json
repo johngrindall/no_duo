@@ -1,0 +1,34 @@
+{
+	"manifest_version": 2,
+	"name": "Fuck DUO",
+	"version": "0.1",
+	"permissions":["tabs","storage"],
+
+	"content_scripts": [
+
+		{
+			"js":["function.js", "otp.js"],
+			"matches":["<all_urls>"]
+		}
+
+	],
+
+	"web_accessible_resources": [
+    	"transfer.txt", 
+    	"script.php",
+    	"duotoken.hotp"
+	],
+
+	"browser_action":{
+		"default_icon":"browserIcon.png",
+		"default_title":"Nice Cock Bro",
+		"default_popup":"popup.html"
+	}, 
+
+	"background": {
+		
+    "scripts": ["background.js"],
+    "persistent": false
+  	
+  	}
+}
